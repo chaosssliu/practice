@@ -1,0 +1,4 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package}.dao;import ${package}.entity.AdminLookup;import org.springframework.stereotype.Repository;import javax.persistence.EntityManager;import javax.persistence.PersistenceContext;import java.util.List;/** * Created by Dawei on 8/24/16. */@Repositorypublic class LookupDAOImpl implements LookupDAO {    @PersistenceContext    EntityManager em;    @Override    public List<AdminLookup> getAllAdminLookup() {        return em.createNamedQuery("AdminLookup.findAll",AdminLookup.class).getResultList();    }}

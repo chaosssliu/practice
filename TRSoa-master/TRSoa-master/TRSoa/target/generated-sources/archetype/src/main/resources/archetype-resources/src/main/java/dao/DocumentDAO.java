@@ -1,0 +1,4 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package}.dao;import ${package}.entity.ProjDocInfo;import ${package}.entity.UserDocInfo;import java.util.List;/** * Created by daweizhuang on 8/23/16. */public interface DocumentDAO {    List<ProjDocInfo> getDocInfoByProjId(int projId);    ProjDocInfo saveFileInfo(ProjDocInfo projDocInfo);    UserDocInfo saveFileInfo(UserDocInfo docInfo);    ProjDocInfo getDocInfoById(int fileId);    List<ProjDocInfo> getLatestDocs(int size);    int deleteProjDocById(int fileId);    UserDocInfo getUserDocInfoById(int fileId);}

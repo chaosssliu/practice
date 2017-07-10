@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LogSys</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<description></description>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description></description>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>servlet.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description></description>
+  	<servlet-name>AddEmp</servlet-name>
+  	<servlet-class>servlet.AddEmp</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddEmp</servlet-name>
+  	<url-pattern>/AddEmp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddDept</servlet-name>
+  	<servlet-class>servlet.AddDept</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddDept</servlet-name>
+  	<url-pattern>/AddDept</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoadListEmp</servlet-name>
+  	<servlet-class>servlet.LoadListEmp</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoadListEmp</servlet-name>
+  	<url-pattern>/LoadListEmp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoadListDept</servlet-name>
+  	<servlet-class>servlet.LoadListDept</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoadListDept</servlet-name>
+  	<url-pattern>/LoadListDept</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,1 @@
+-- Clean the timesheet submissionuse dz_oa;update ts_main t set t.approval_id = null;delete from ts_approval_audit;delete  from ts_approval;drop database activiti;create database activiti;-- -----------------------
