@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "com.antra.uploadfile.controller")
+@ComponentScan(basePackages = "com.antra.uploadfile")
 
 public class MvcConfig {
 
