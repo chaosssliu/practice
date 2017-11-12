@@ -21,7 +21,7 @@ public class AwsS3ServiceImpl implements AwsS3Service {
 			ObjectMetadata objectMetadata = new ObjectMetadata();
 			objectMetadata.setContentType(file.getContentType());
 		
-			s3client.putObject(new PutObjectRequest("chaossstest", file.getOriginalFilename(), file.getInputStream(), objectMetadata)
+			s3client.putObject(new PutObjectRequest("bucketname", file.getOriginalFilename(), file.getInputStream(), objectMetadata)
 					.withCannedAcl(CannedAccessControlList.PublicRead));
 		} catch (Exception e) {
 			e.printStackTrace();
