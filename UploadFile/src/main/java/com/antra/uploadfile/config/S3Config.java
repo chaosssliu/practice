@@ -9,9 +9,9 @@ import com.amazonaws.services.s3.AmazonS3Client;
 @Configuration
 public class S3Config {
 
-	private String accessId = "AKIAJMPF4QP756QZ3ENA";
+	private String accessId = "accessId";
 	
-	private String accessKey = "GiTP3ojFLPHc6oE2dBsYDypj/HyBxuDRKKuyfI8Z";
+	private String accessKey = "accessKey";
 	
 	@Bean
 	public BasicAWSCredentials credential() {
