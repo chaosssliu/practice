@@ -18,7 +18,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	AWSCredentials credentials = new BasicAWSCredentials("AKIAJHYCP4L3IFBL2SKQ", "Dc9JZzMKSSmuYMUVqQL6HicAIth5A8g7tV9eF0bw");
+    	AWSCredentials credentials = new BasicAWSCredentials("", "");
     	AmazonSQSClient sqs = new AmazonSQSClient(credentials);
     	sqs.setEndpoint("https://sqs.us-east-1.amazonaws.com");
     	String myQueueUrl = sqs.getQueueUrl("TestQueue.fifo").getQueueUrl();
